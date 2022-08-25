@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Actividad peso en marte</title>
+    <!-- <link rel="stylesheet" href="./estilos.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-card-form">
+            <h1 class="title">Calcula tu peso en varios planetas</h1>
+            <form class="form">
+                <div class="container-select-planet">
+                    <label class="label-select-planet">Escoje el planeta</label>
+                    <div class="button-planets-select">Planetas</div>
+                    <div class="box-options-planets">
+                    </div>
+                </div>
+                <div class="container-input-peso">
+                    <label class="label-input-peso">Ingresa tu peso</label>
+                    <input required type="number" name="peso" placeholder="Peso en kg" id="peso">
+                </div>
+                <div class="container-result">
+                    <button type="button" id="boton">Calcula</button>
+                    <label id="resultado">Aqui ira el resultado</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./src/const.js"></script>
+    <script src="./src/watchMenu.js"></script>
+    <script src="./src/mapOptions.js"></script>
+    <script src="./src/calculation.js"></script>
+</body>
+
+</html>
