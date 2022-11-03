@@ -1,5 +1,23 @@
-# Weight-calculation-on-other-planets
+<h1 align="center">Weight calculation on other planets</h1>
 
-Calculate how your weight would be on other planets
+Simple web page that given the selected weight and the selected planet will calculate its equivalent on that planet. In order to calculate the operations, a simple rule of three of the ( weight \* gravity ) / 9.81 is used.
 
-![Preview del repo](https://raw.githubusercontent.com/EddyBel/Weight-calculation-on-other-planets/main/info/preview.png)
+:link: Weight-calculation-on-other-planets https://eddybel.github.io/Weight-calculation-on-other-planets/
+
+# Preview Proyect
+
+![Preview](./src/assets/doc/preview1.png)
+
+---
+
+![Preview2](./src/assets/doc/preview2.png)
+
+---
+
+![Preview3](./src/assets/doc/preview3.png)
+
+# Technologies
+
+- JavaScript
+- CSS
+- HTML
