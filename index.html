@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style.css">
-    <title>Actividad peso en marte</title>
+  <head>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/icon.webp"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./src/css/fonts.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/card.css" />
+    <!-- Fin de estilos -->
+    <title>Peso en otros planetas</title>
     <!-- <link rel="stylesheet" href="./estilos.css"> -->
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="box-card-form">
-            <h1 class="title">Calcula tu peso en varios planetas</h1>
-            <form class="form">
-                <div class="container-select-planet">
-                    <label class="label-select-planet">Escoje el planeta</label>
-                    <div class="button-planets-select">Planetas</div>
-                    <div class="box-options-planets">
-                    </div>
-                </div>
-                <div class="container-input-peso">
-                    <label class="label-input-peso">Ingresa tu peso</label>
-                    <input required type="number" name="peso" placeholder="Peso en kg" id="peso">
-                </div>
-                <div class="container-result">
-                    <button type="button" id="boton">Calcula</button>
-                    <label id="resultado">Aqui ira el resultado</label>
-                </div>
-            </form>
-        </div>
+      <!-- Carta contenedora -->
+      <div class="box-card-form">
+        <!-- Titulo -->
+        <h1 class="title">Calcula tu peso en varios planetas</h1>
+        <!-- Fin Titulo -->
+        <!-- Formulario de los datos -->
+        <form class="form">
+          <!-- Contenedor de las opciones -->
+          <div class="container-select-planet">
+            <!-- Titulo de la seccion -->
+            <label class="label-select-planet">Escoje el planeta</label>
+            <!-- Fin Titulo de la seccion -->
+            <!-- Etiqueta que muestra la opcion elegida -->
+            <div class="button-planets-select">Planetas</div>
+            <!-- Fin Etiqueta que muestra la opcion elegida -->
+            <!-- Contenedor de la lista de opciones -->
+            <div class="box-options-planets"></div>
+            <!-- Fin Contenedor de la lista de opciones -->
+          </div>
+          <!-- Fin Contenedor de las opciones -->
+          <!-- Contenedor de la Entrada del peso -->
+          <div class="container-input-peso">
+            <!-- Titulo de la seccion -->
+            <label class="label-input-peso">Ingresa tu peso</label>
+            <!-- Fin Titulo de la seccion -->
+            <!-- Entrada del peso del usuario -->
+            <input
+              required
+              type="number"
+              name="peso"
+              placeholder="Peso en kg"
+              id="peso"
+            />
+            <!-- Fin Entrada del peso del usuario -->
+          </div>
+          <!-- Fin Contenedor de la Entrada del peso -->
+          <!-- Contenedor del resultado de la operacion -->
+          <div class="container-result">
+            <!-- Boton para iniciar el calculo -->
+            <button type="button" id="boton">Calcula</button>
+            <!-- Fin Boton para iniciar el calculo -->
+            <!-- Contenedor del resultado -->
+            <label id="resultado">Aqui ira el resultado</label>
+            <!-- Fin Contenedor del resultado -->
+          </div>
+          <!-- Fin Contenedor del resultado de la operacion -->
+        </form>
+        <!-- FIn Formulario de los datos -->
+      </div>
+      <!-- Fin Carta contenedora -->
     </div>
-    <script src="./src/const.js"></script>
-    <script src="./src/watchMenu.js"></script>
-    <script src="./src/mapOptions.js"></script>
-    <script src="./src/calculation.js"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="./src/js/const.js"></script>
+    <script src="./src/js/toggelOptions.js"></script>
+    <script src="./src/js/render.js"></script>
+    <script src="./src/js/calculation.js"></script>
+    <!-- Fin Scripts -->
+  </body>
 </html>
